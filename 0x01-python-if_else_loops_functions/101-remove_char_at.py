@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+# Author - bamidele Adefolaju
+
 def remove_char_at(str, n):
-    str_cpy = ""
-    for idx in range(len(str)):
-        if idx != n:
-            str_cpy += str[idx]
-    return str_cpy
+    if n < 0:
+        return (str)
+    return (str[:n] + str[n+1:])
